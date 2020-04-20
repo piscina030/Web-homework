@@ -1,0 +1,93 @@
+<!-- piscina030 2020.03.23 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单元素注册页面</title>
+    <script>
+        function chknumber() {
+            var obj = document.myfrm.age;
+            var vv = obj.value;
+            if (isNaN(vv)) { // 如果这个值返回为真，则输入的不是数字
+                alert("你输入的不是数字！");
+                obj.value = "";
+                obj.focus();
+            }
+        }
+        function setbg() {
+            var colorObj = document.myfrm.mybg;
+            var vv = colorObj.value;
+            document.body.style.backgroundColor = vv;
+        }
+        function setoutput() {
+            var x = document.getElementById("range1");
+            var y = document.getElementById("range2");
+            y.value = x.value;
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" method="" name="myfrm">
+        <table>
+            <tr>
+                <td>请输入您的邮箱地址：</td>
+                <td>
+                    <input type="email" name="myemail" placeholder="输入邮箱地址">
+                </td>
+            </tr>
+            <tr>
+                <td>请输入一个网址：</td>
+                <td>
+                    <input type="url" name="myurl" placeholder="输入网址">
+                </td>
+            </tr>
+            <tr>
+                <td>请输入数字：</td>
+                <td>
+                    <input type="number" name="mynum" value="4" onblur="chknumber()">
+                </td>
+            </tr>
+            <tr>
+                <td>数字滑动条：</td>
+                <td>
+                    <input type="range" name="range1" max="255" min="0" id="range1" onchange="setoutput()" value="0">
+                    <input type="text" id="range2" onchange="setoutput()" name="range2" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td>请输入日期：</td>
+                <td>
+                    <input type="date" name="mydate">
+                </td>
+            </tr>
+            <tr>
+                <td>请选择颜色：</td>
+                <td>
+                    <input type="color" name="mybg" value="#ff0000" onchange="setbg()">
+                </td>
+            </tr>
+            <tr>
+                <td>请选择招式：</td>
+                <td>
+                    <input type="text" name="zhaoshi" list="zs">
+                    <datalist id="zs">
+                        <option>亢龙有悔</option>
+                        <option>飞龙在天</option>
+                        <option>见龙在田</option>
+                        <option>神龙摆尾</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="提交">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

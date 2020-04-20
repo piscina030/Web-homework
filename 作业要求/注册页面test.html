@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="width=device-width, initial-scale=1.0">
+    <title>用户注册页面</title>
+    <link rel="stylesheet" href="css/register.css" type="text/css">
+</head>
+
+<body>
+    <!-- 注册部分 start -->
+    <table width="100%" border="0" callspacing="0" cellpading="0" bgcolor="#f8f8f8">
+        <tr>
+            <td>
+                <table width="1000" border="0" cellspacing="0" cellpading="0" bgcolor="#ffffff" align="center">
+                    <tr>
+                        <td valign="top">
+                            <h2 align="center">用户注册</h2>
+                            <hr width="90%" align="center" color="#ccc">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <form action="#" method="POST" enctype="multipart/form-data">
+                                <table width="90%" border="0" cellspacing="0" cellpadding="0" class="reg"
+                                    align="center">
+                                    <tr>
+                                        <td width="80">用户名：</td>
+                                        <td><input type="text" id="userName" name="userName" placeholder="请输入用户"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>邮箱地址：</td>
+                                        <td><input name="email" id="email" type="text" placeholder="请输入邮箱地址"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>设置密码：</td>
+                                        <td><input type="password" id="userPwd" name="userPwd"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td class="gray12">6-20个字符，由字母、数字和符号的两种以上组合</td>
+                                    </tr>
+                                    <tr>
+                                        <td>确认密码：</td>
+                                        <td><input type="password" name="userRePwd" id="userRePwd"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>真实姓名：</td>
+                                        <td><input type="text" placeholder="请输入真实姓名" name="realName" id="realName"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>您的性别：</td>
+                                        <td><input type="radio" name="sex" value="radio" checked="checked">男&nbsp;&nbsp;
+                                            <input type="radio" name="sex" value="radio">女
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>上传头像</td>
+                                        <td>
+                                            <input type="file" name="headPic" id="headPic">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>您的手机：</td>
+                                        <td><input type="text" placeholder="请输入您的手机号" name="mobile" id="mobile"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>单位名称：</td>
+                                        <td><input type="text" placeholder="请输入单位名称" name="company" id="company"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>单位地址：</td>
+                                        <td>
+                                            <select name="province">
+                                                <option>请选择省份</option>
+                                                <option>北京市</option>
+                                                <option>上海市</option>
+                                                <option>广东省</option>
+                                            </select>
+                                            <select name="city">
+                                                <option>请选择城市</option>
+                                                <option>广州市</option>
+                                                <option>深圳市</option>
+                                                <option>杭州市</option>
+                                            </select>
+                                            <select name="area">
+                                                <option>请选择区</option>
+                                                <option>荔湾区</option>
+                                                <option>海珠区</option>
+                                                <option>越秀区</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            <input type="text" placeholder="请输入街道地址" name="address" id="address">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>您的爱好：</td>
+                                        <td>
+                                            <input type="checkbox" name="hobby" value="购物">购物
+                                            <input type="checkbox" name="hobby" value="影视">影视
+                                            <input type="checkbox" name="hobby" value="餐饮">餐饮
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>协议内容：</td>
+                                        <td>
+                                            <textarea cols="30" rows="3"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            <input type="submit" name="button" value="提交">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- 注册部分 end -->
+</body>
+
+</html>
