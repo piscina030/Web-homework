@@ -1,0 +1,35 @@
+<!-- piscina030 2020.04.26 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标经过的图像</title>
+    <script type="text/javascript" src="js/10.js">
+
+    </script>
+</head>
+
+<body>
+    <center>
+        <p>
+            鼠标经过的图像：
+        </p>
+        <p>
+            <img src="img/dl1.jpg" onmouseover="chgimg()" id="myimg" onmouseleave="resetimg()">
+        </p>
+        <p>
+            图片轮播：
+        </p>
+        <p>
+            <img src="img/love1.jpg" id="lb" width="400px" height="300px">
+        </p>
+        <p>
+            <input type="button" value="开始" onclick="start()">
+            <input type="button" value="结束" onclick="stop()">
+        </p>
+    </center>
+</body>
+
+</html>
